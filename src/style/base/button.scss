@@ -1,6 +1,8 @@
 .button {
   position: relative;
 
+  z-index: 15;
+
   display: inline-flex;
 
   align-items: center;
@@ -53,13 +55,14 @@
 
     font-family: Montserrat, sans-serif;
     font-weight: 800;
+    @include ts(color);
   }
 
   &:hover {
-    background: $color_active;
-    box-shadow: 0 24px 60px $color_active;
+    & .button__text {
+      color: $color_light;
+    }
   }
-  @include ts(background);
 }
 
 /* View END */

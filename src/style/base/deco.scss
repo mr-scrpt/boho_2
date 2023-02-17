@@ -47,10 +47,10 @@
         rgba($color_dark, 100%) 100%
       );
       @include bp768-block {
-        height: 150px;
+        height: 120px;
       }
       @include bp994-block {
-        height: 180px;
+        height: 150px;
       }
       @include bp1440-block {
         height: 200px;

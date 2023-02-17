@@ -26,11 +26,13 @@
 
       display: block;
 
+      min-height: 630px;
       max-height: 670px;
     }
     @include bp994-block {
-      left: -235px;
+      left: -115px;
 
+      min-height: 750px;
       max-height: 855px;
     }
     @include bp1100-block {

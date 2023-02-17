@@ -2,6 +2,8 @@
   &__inner {
     display: flex;
     flex-wrap: wrap;
+
+    margin-bottom: 15px;
     @include bp994-block {
       align-items: center;
       flex-wrap: nowrap;
