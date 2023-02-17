@@ -1,0 +1,16 @@
+{
+  "paysys_list": {
+    "australia": [
+      "interac",
+      "visa",
+      "neosurf",
+      "flexepin",
+      "mifinity",
+      "ecopayz",
+      "btc",
+      "eth",
+      "idebit",
+      "skrill"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+.deco {
+  &__hero {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      overflow: hidden;
+
+      width: 100%;
+      height: 100%;
+
+      content: '';
+
+      // background-color: $color_active;
+      background-image: url('/img/regular/hero/hero_bg-alt.png');
+      background-repeat: no-repeat;
+
+      // filter: blur(200px);
+      @include bp480-block {
+        // background-image: url('/img/regular/hero/hero_bg-alt.png');
+        filter: none;
+
+        background-size: cover;
+      }
+    }
+  }
+
+  &__shadow {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      z-index: 1;
+      bottom: 0;
+
+      width: 100%;
+      height: 100px;
+
+      content: '';
+
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        rgba($color_dark, 100%) 100%
+      );
+      @include bp768-block {
+        height: 150px;
+      }
+      @include bp994-block {
+        height: 180px;
+      }
+      @include bp1440-block {
+        height: 200px;
+      }
+    }
+  }
+
+  &__shadow-r {
+    position: relative;
+
+    &::before {
+      position: absolute;
+
+      z-index: 2;
+      top: 0;
+      right: 0;
+
+      width: 30px;
+      height: 100%;
+
+      content: '';
+
+      background: linear-gradient(
+        90deg,
+        transparent 0%,
+        rgba($color_dark, 100%) 100%
+      );
+    }
+  }
+
+  &__attention {
+    color: $color_attention;
+  }
+}

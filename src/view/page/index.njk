@@ -1,0 +1,39 @@
+{% set inject = { layoutClass: "page page_theme layout deco"} %}
+{% extends "layout/layout.njk" %}
+{% block main %}
+    <!-- Hero seciton -->
+    {% set inject = {
+    wrapper: 'flat',
+    sectionInner: '',
+    sectionClass: 'layout__fs layout__pit deco__hero deco__shadow'
+    } %}
+    {% include "section/hero-section.njk" %}
+    <!-- Hero seciton END -->
+    <!-- Benefit seciton -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: '',
+    sectionClass: '',
+    sectionContainer: 'standart'
+    } %}
+    {% include "section/benefit-section.njk" %}
+    <!-- Benefit seciton END -->
+    <!-- Paysys seciton -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: '',
+    sectionClass: '',
+    sectionContainer: 'standart'
+    } %}
+    {% include "section/paysys-section.njk" %}
+    <!-- Paysys seciton END -->
+    <!-- Footer seciton -->
+    {% set inject = {
+    wrapper: 'wrap',
+    sectionInner: '',
+    sectionClass: '',
+    sectionContainer: 'standart'
+    } %}
+    {% include "section/footer-section.njk" %}
+    <!-- Footer seciton END -->
+{% endblock main %}

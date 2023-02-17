@@ -1,0 +1,67 @@
+.layout {
+  &__inner {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: 100%;
+  }
+
+  &__wrap {
+    width: 100%;
+    height: 100%;
+    @include wrapper;
+  }
+
+  &__flat {
+    width: 100%;
+    height: 100%;
+
+    // @include wrapper;
+  }
+
+  &__container {
+    margin: auto;
+
+    &_standart {
+      max-width: 1640px;
+    }
+  }
+
+  &__section {
+    overflow: hidden;
+  }
+
+  &__fs {
+    width: 100vw;
+    max-width: 100%;
+    height: 100vh;
+    @include bp768-block {
+      min-height: 500px;
+      max-height: 670px;
+    }
+    @include bp994-block {
+      min-height: 600px;
+      max-height: 855px;
+    }
+
+    @include bp1440-block {
+      min-height: 700px;
+      max-height: 950px;
+    }
+  }
+
+  &__pit {
+    @include bp994-block {
+      margin-bottom: -20px;
+    }
+    @include bp1440-block {
+      margin-bottom: -100px;
+    }
+    @include bp1600-block {
+      margin-bottom: -130px;
+    }
+  }
+}
